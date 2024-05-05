@@ -303,10 +303,33 @@
     </div>
 
     <!-- Section 2 end  -->
+    <!-- section 3 start  -->
+    <section class="section section-work-data">
+        <div class="container grid grid-four-column ">
+            <div>
+                <h2 class="counter numbers">10000</h2>
+                <p>Student Enrolled</p>
+            </div>
+            <div>
+                <h2 class="counter numbers">105</h2>
+                <p>PHD Professors</p>
+            </div>
+            <div>
+                <h2 class="counter numbers">29</h2>
+                <p>Program Offerd</p>
+            </div>
+            <div>
+                <h2 class="counter numbers">10</h2>
+                <p>National Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 end  -->
 
     <!-- footer section start  -->
     <footer>
-        <div class="container">
+        <div class=" container">
             <div class="aboutus">
                 <a href="index.html"><img class="footerLogoImage" src="img/logo03.png" alt=""></a>
                 <p> <i class="fa-solid fa-location-dot"></i> A/2, Jahurul Islam Avenue
