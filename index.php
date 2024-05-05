@@ -186,7 +186,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Find Room</a>
+                            <a class="nav-link" href="map2.html">Find Room</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">User</a>
