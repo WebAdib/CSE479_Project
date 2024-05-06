@@ -173,7 +173,7 @@ button:focus,
     text-align: center;
 }
 
-.card {
+.services .card {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -186,23 +186,23 @@ button:focus,
     cursor: pointer;
 }
 
-.card:hover {
+.services .card:hover {
     background-color: #b8d4de;
     transition: 0.4s ease;
 }
 
-.card .icon {
+.services .card .icon {
     font-size: 35px;
     margin-bottom: 10px;
 }
 
-.card h2 {
+.services .card h2 {
     font-size: 28px;
     color: var(--text-primary-color);
     margin-bottom: 20px;
 }
 
-.card p {
+.services .card p {
     font-size: 17px;
     margin-bottom: 30px;
     padding: 0px;
@@ -210,7 +210,7 @@ button:focus,
     color: var(--text-primary-color);
 }
 
-.btn-se2-b1{
+.btn-se2-b1 {
     font-size: 15px;
     text-decoration: none;
     color: #ffffff;
@@ -220,7 +220,7 @@ button:focus,
     Letter-spacing: 1px;
 }
 
-.btn-se2-b1:hover{
+.btn-se2-b1:hover {
     color: var(--text-primary-color);
     background-color: var(--bg-secondary-color);
     border-width: 3px;
@@ -229,6 +229,13 @@ button:focus,
 }
 
 /*Section 2 end */
+/* section 3 start */
+
+
+
+/* section 3 end */
+
+
 
 
 /* footer  strat*/
@@ -374,6 +381,7 @@ footer .container .quicklinks ul li a:hover {
         display: flex;
         margin: 20px 0px;
     }
+    /* section 2 end */
 
     /*footer*/
     footer {

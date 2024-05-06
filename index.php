@@ -260,7 +260,7 @@
     </div>
 
     <!-- Section 2 section start  -->
-    <div class="section">
+    <div class="section2">
         <div class="services">
             <div class="card">
                 <div class="icon">
@@ -304,26 +304,39 @@
 
     <!-- Section 2 end  -->
     <!-- section 3 start  -->
-    <section class="section section-work-data">
-        <div class="container grid grid-four-column ">
-            <div>
-                <h2 class="counter numbers">10000</h2>
+    <div class="section">
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>11000+</h2>
                 <p>Student Enrolled</p>
             </div>
-            <div>
-                <h2 class="counter numbers">105</h2>
-                <p>PHD Professors</p>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>11000+</h2>
+                <p>Student Enrolled</p>
             </div>
-            <div>
-                <h2 class="counter numbers">29</h2>
-                <p>Program Offerd</p>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>11000+</h2>
+                <p>Student Enrolled</p>
             </div>
-            <div>
-                <h2 class="counter numbers">10</h2>
-                <p>National Awards</p>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>11000+</h2>
+                <p>Student Enrolled</p>
             </div>
+            
         </div>
-    </section>
+    </div>
 
     <!-- section 3 end  -->
 
