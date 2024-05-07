@@ -60,7 +60,7 @@ button:focus,
 }
 
 .menu_wrapper .navbar-nav .nav-link {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--text-primary-color);
     display: inline-block;
@@ -164,17 +164,70 @@ button:focus,
 } */
 
 /* section 1 work start */
-.course{
+.course {
     width: 85%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-
 }
+
+.course h1 {
+    color: var(--text-primary-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p {
+    color: var(--text-third-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course .row .course-col {
+    flex-basis: 31%;
+    background: #efefef;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course .row .course-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px O;
+}
+.course .row .course-col p {
+    color: var(--text-third-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course .row .course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* section 1 work end */
 
 /*Section 2 start*/
+.section2 {
+    background: #192f59;
+    padding: 50px 0px;
+}
+
 .services {
+
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -240,10 +293,145 @@ button:focus,
 
 /*Section 2 end */
 /* section 3 start */
+.campus {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
 
+.campus h1 {
+    color: var(--text-primary-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.campus p {
+    color: var(--text-third-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.campus .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campus .row .campus-col {
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    /* border-radius: 10px; */
+}
+
+.campus .row .campus-col img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px;
+    display: block;
+}
+
+.campus .row .campus-col .img-layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    ;
+}
+
+.campus .row .campus-col .img-layer:hover {
+    background: #192f5953;
+}
+
+.campus .row .campus-col .img-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.campus .row .campus-col .img-layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
 
 /* section 3 end */
+/* section 4 start  */
+.section4 {
+    background: #192f59;
+    padding: 50px 0px;
+}
+
+/* section 4 end  */
+/* section 5 start  */
+.facilities {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities .facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities .facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.facilities h1 {
+    color: var(--text-primary-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+.facilities p {
+    color: var(--text-third-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px;
+}
+
+.facilities .facilities-col p {
+    color: var(--text-third-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px;
+}
+.facilities .facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.facilities .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* section 5 end  */
 
 
 
@@ -391,6 +579,7 @@ footer .container .quicklinks ul li a:hover {
         display: flex;
         margin: 20px 0px;
     }
+
     /* section 2 end */
 
     /*footer*/
@@ -412,6 +601,19 @@ footer .container .quicklinks ul li a:hover {
 
 /* responsive for mobile  */
 @media (max-width:768px) {
+
+    /* section 1 strat  */
+    .course .row {
+        flex-direction: column;
+    }
+
+    .campus .row {
+        flex-direction: column;
+    }
+    .facilities .row {
+        flex-direction: column;
+    }
+
     footer .container {
         width: 100%;
         display: grid;
