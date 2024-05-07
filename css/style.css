@@ -13,9 +13,9 @@
 
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     /* background: var(--bg-primary-color); */
@@ -162,6 +162,16 @@ button:focus,
 /* .carousel-control-prev-icon{
 
 } */
+
+/* section 1 work start */
+.course{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+/* section 1 work end */
 
 /*Section 2 start*/
 .services {
