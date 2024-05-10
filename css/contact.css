@@ -1,3 +1,17 @@
+:root {
+    /* bg color  */
+    --bg-primary-color: #192f59;
+    --bg-secondary-color: #ffffff;
+
+    /* text color */
+    --text-black: #000000;
+    --text-primary-color: #192f59;
+    --text-secondary-color: #ffffff;
+    --text-third-color: #666666;
+
+}
+
+
 .containerForm {
     max-width: 600px;
     margin: 50px auto;
