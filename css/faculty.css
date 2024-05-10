@@ -1,0 +1,98 @@
+:root {
+    /* bg color  */
+    --bg-primary-color: #192f59;
+    --bg-secondary-color: #ffffff;
+
+    /* text color */
+    --text-black: #000000;
+    --text-primary-color: #192f59;
+    --text-secondary-color: #ffffff;
+    --text-third-color: #666666;
+
+}
+
+.about-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 13%;
+}
+.about-right{
+    width: 57%;
+}
+.about-right .addresses ul li{
+    display: flex;
+    align-items: center;
+}
+.about-right h1{
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.about-right p{
+    color: var(--text-third-color);
+    font-size: 18px;
+    margin: 0px;
+}
+.about-right .addresses{
+    margin: 25px 0;
+}
+.about-right .addresses ul{
+    padding: 0px;
+}
+.about-right .addresses ul li{
+    margin-bottom: 5px;
+}
+
+.about-right .addresses .address-logo{
+    display: flex;
+    margin-right: 15px;
+    color: #192f59;
+}
+
+.about-right .addresses .separater{
+    margin: 0 35px;
+}
+
+
+.about-right .expertise h3{
+    margin-bottom: 10px;
+}
+
+
+
+.about-left img{
+    border: 5px solid #ccc;
+}
+/*footer*/
+
+.expertise .sociallinks {
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+
+}
+
+.expertise .sociallinks li {
+    list-style: none;
+}
+
+.expertise .sociallinks li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid var(--bg-primary-color);
+}
+
+.expertise .sociallinks li a i {
+    color: var(--bg-primary-color);
+    font-size: 20px;
+}
