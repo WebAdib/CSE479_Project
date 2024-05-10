@@ -11,6 +11,39 @@
 
 }
 
+.facultybackground-overlay {
+    background-image: url('../img/slider05.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250px; /* Adjust as needed */
+}
+
+.facultybackground-overlay::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.764); /* Adjust opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.facultycontent {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.facultycontent h1 {
+    margin: 0;
+}
+
+
 .about-section{
     width: 100%;
     height: auto;
