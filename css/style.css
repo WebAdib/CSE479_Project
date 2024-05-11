@@ -200,6 +200,9 @@ button:focus,
     box-sizing: border-box;
     transition: 0.5s;
 }
+.course .row .course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
 
 .course .row .course-col h3 {
     text-align: center;
@@ -214,9 +217,7 @@ button:focus,
     padding: 10px;
 }
 
-.course .row .course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
+
 
 /* section 1 work end */
 
