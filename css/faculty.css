@@ -11,17 +11,21 @@
 
 }
 
+/* over lay section strat */
+
 .facultybackground-overlay {
     background-image: url('../img/slider05.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 250px; /* Adjust as needed */
+    height: 250px;
+    /* Adjust as needed */
 }
 
 .facultybackground-overlay::before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.764); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.764);
+    /* Adjust opacity as needed */
     position: absolute;
     top: 0;
     left: 0;
@@ -43,8 +47,10 @@
     margin: 0;
 }
 
+/* over lay section end */
+/* about section start  */
 
-.about-section{
+.about-section {
     width: 100%;
     height: auto;
     display: flex;
@@ -52,60 +58,90 @@
     align-items: center;
     padding: 80px 13%;
 }
-.about-right{
+
+.about-right {
     width: 57%;
 }
-.about-right .addresses ul li{
+
+.about-right .addresses ul li {
     display: flex;
     align-items: center;
 }
-.about-right h1{
+
+.about-right h1 {
     color: blue;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 5px;
 }
-.about-right p{
+
+.about-right p {
     color: var(--text-third-color);
     font-size: 18px;
     margin: 0px;
 }
-.about-right .addresses{
+
+.about-right .addresses {
     margin: 25px 0;
 }
-.about-right .addresses ul{
+
+.about-right .addresses ul {
     padding: 0px;
 }
-.about-right .addresses ul li{
+
+.about-right .addresses ul li {
     margin-bottom: 5px;
 }
 
-.about-right .addresses .address-logo{
+.about-right .addresses .address-logo {
     display: flex;
     margin-right: 15px;
     color: #192f59;
 }
 
-.about-right .addresses .separater{
+.about-right .addresses .separater {
     margin: 0 35px;
 }
 
 
-.about-right .expertise h3{
+.about-right .expertise h3 {
     margin-bottom: 10px;
 }
 
 
 
-.about-left img{
+.about-left img {
     border: 5px solid #ccc;
 }
-/* ta section  */
-.ta-container{
+
+/* office hour section start  */
+.office-hour {
     background-color: #cccccc87;
+    text-align: center;
+    padding: 20px;
+}
+
+.office-hour h2 {
+    margin-top: 0;
+}
+
+.office-hour img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* office hour section end  */
+
+
+
+/* ta section  start */
+.ta-container {
+    background-color: white;
     margin: 0;
     padding: 20px 0px;
 }
+
 .gallery-container {
     max-width: 800px;
     margin: 50px auto;
@@ -113,6 +149,7 @@
 }
 
 .gallery-container h2 {
+    color: #192f59;
     margin-bottom: 20px;
 }
 
@@ -179,6 +216,7 @@
 .button:hover {
     background-color: #0056b3;
 }
+
 /* TA section end  */
 
 
@@ -210,4 +248,104 @@
 .expertise .sociallinks li a i {
     color: var(--bg-primary-color);
     font-size: 20px;
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .facultybackground-overlay {
+        height: 200px;
+        /* Adjust as needed */
+    }
+
+    .facultycontent {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 50px 10%;
+    }
+
+    .about-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* ta section  */
+    .gallery-container {
+        max-width: 90%;
+    }
+
+    .gallery-item {
+        margin: 0 5px;
+    }
+
+    .gallery-info {
+        padding: 5px 0;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile devices (576px and below) */
+@media (max-width: 576px) {
+
+    /* overlay section  strat */
+    .facultybackground-overlay {
+        height: 150px;
+    }
+
+    .facultycontent {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+
+    /* overlay section  strat */
+
+    .about-right h1 {
+        font-size: 26px;
+    }
+
+    .about-right p {
+        font-size: 16px;
+    }
+
+    .about-right .addresses ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-right .addresses .separater {
+        margin: 0;
+    }
+
+    .about-right .expertise h3 {
+        font-size: 18px;
+    }
+
+    /* ta section  */
+    .gallery-container {
+        max-width: 95%;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        flex: 0 0 100%;
+        margin: 0 0 20px;
+    }
+
+    .gallery-info {
+        padding: 8px 0;
+    }
+
+    .button {
+        padding: 8px 12px;
+    }
 }
