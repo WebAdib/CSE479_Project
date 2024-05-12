@@ -18,7 +18,7 @@ if (!isset($_SESSION["user"])) {
             <h1 class="bg-primary p-4"><a href="./index.php" class="text-light text-decoration-none">Dashboard</a></h1>
             <div class="menues p-4 mt-5">
                 <div class="menu">
-                    <a href="create.php" class="text-light text-decoration-none"><strong>Add New Post</strong></a>
+                    <a href="create.php" class="text-light text-decoration-none"><strong>Add New Job</strong></a>
                 </div>
                 <div class="menu mt-5">
                     <a href="../job.php" class="text-light text-decoration-none"><strong>View Website</strong></a>

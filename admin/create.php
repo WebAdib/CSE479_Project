@@ -7,10 +7,10 @@ include("templates/header.php");
                     <input type="text" class="form-control" name="title" id="" placeholder="Enter Title:">
                 </div>
                 <div class="form-field mb-4">
-                    <textarea name="summary"  class="form-control" id="" cols="30" rows="10" placeholder="Enter Summary:"></textarea>
+                    <textarea name="summary"  class="form-control" id="" cols="30" rows="10" placeholder="Enter Job Summary:"></textarea>
                 </div>
                 <div class="form-field mb-4">
-                    <textarea name="content" class="form-control" id="" cols="30" rows="10" placeholder="Enter Post:"></textarea>
+                    <textarea name="content" class="form-control" id="" cols="30" rows="10" placeholder="Enter Details:"></textarea>
                 </div>
                 <input type="hidden" name="date" value="<?php echo date("Y/m/d"); ?>">
 

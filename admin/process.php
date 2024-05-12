@@ -8,7 +8,7 @@ if (isset($_POST["create"])) {
     $sqlInsert = "INSERT INTO posts(date,title, summary, content) VALUES ('$date', '$title', '$summary','$content' )";
     if(mysqli_query($conn, $sqlInsert)){
         session_start();
-        $_SESSION["create"] = "Post added successfully";
+        $_SESSION["create"] = "Job added successfully";
         header("Location:index.php");
     }else{
         die("Data is not inserted!");

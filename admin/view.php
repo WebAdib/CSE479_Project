@@ -17,7 +17,7 @@ include("templates/header.php");
         <?php
         }
     }else{
-        echo "Post Not Found";
+        echo "Job Not Found";
     }
     ?>
 </div>
