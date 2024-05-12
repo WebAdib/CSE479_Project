@@ -123,7 +123,7 @@ button:focus,
 .carousel-item::before {
     content: "";
     display: block;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     right: 0;
@@ -132,20 +132,20 @@ button:focus,
     opacity: 0.3;
 }
 
-.carousel-caption {
+.carousel-item .carousel-caption {
     bottom: 225px;
     padding-left: 100px;
     padding-right: 100px;
 
 }
 
-.carousel-caption h5 {
+.carousel-item .carousel-caption h5 {
     font-size: 100px;
     font-weight: 700;
     color: var(--bg-secondary-color);
 }
 
-.carousel-caption p {
+.carousel-item .carousel-caption p {
     font-size: 20px;
     font-weight: 500;
     color: var(--bg-secondary-color);
@@ -159,6 +159,7 @@ button:focus,
     font-size: 25px;
 }
 
+/* carousel word end  */
 /* .carousel-control-prev-icon{
 
 } */
@@ -200,6 +201,7 @@ button:focus,
     box-sizing: border-box;
     transition: 0.5s;
 }
+
 .course .row .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
@@ -209,6 +211,7 @@ button:focus,
     font-weight: 600;
     margin: 10px O;
 }
+
 .course .row .course-col p {
     color: var(--text-third-color);
     font-size: 14px;
@@ -388,13 +391,15 @@ button:focus,
     text-align: center;
     padding-top: 100px;
 }
-.facilities .facilities-col{
+
+.facilities .facilities-col {
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
-.facilities .facilities-col img{
+
+.facilities .facilities-col img {
     width: 100%;
     border-radius: 10px;
 }
@@ -405,6 +410,7 @@ button:focus,
     font-size: 36px;
     font-weight: 600;
 }
+
 .facilities p {
     color: var(--text-third-color);
     font-size: 18px;
@@ -420,6 +426,7 @@ button:focus,
     line-height: 22px;
     padding: 0px;
 }
+
 .facilities .facilities-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
@@ -568,6 +575,32 @@ footer .container .quicklinks ul li a:hover {
         margin: 30px 0;
     }
 
+    /* carousel work  start */
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-item .carousel-caption {
+        bottom: 15%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 40px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .fa-circle-arrow-left,
+    .fa-circle-arrow-right {
+        font-size: 20px;
+    }
+
+    /* carousel work  end */
+
     /* section 2 start  */
 
     .services {
@@ -603,6 +636,32 @@ footer .container .quicklinks ul li a:hover {
 /* responsive for mobile  */
 @media (max-width:768px) {
 
+    /* carousel work  start */
+    .carousel-item {
+        height: 50vh;
+        /* Adjust as needed */
+    }
+
+    .carousel-item .carousel-caption {
+        bottom: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 30px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .fa-circle-arrow-left,
+    .fa-circle-arrow-right {
+        font-size: 18px;
+    }
+    /* carousel work end  */
+
     /* section 1 strat  */
     .course .row {
         flex-direction: column;
@@ -611,6 +670,7 @@ footer .container .quicklinks ul li a:hover {
     .campus .row {
         flex-direction: column;
     }
+
     .facilities .row {
         flex-direction: column;
     }
