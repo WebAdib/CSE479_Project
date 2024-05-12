@@ -1,0 +1,68 @@
+:root {
+    /* bg color  */
+    --bg-primary-color: #192f59;
+    --bg-secondary-color: #ffffff;
+
+    /* text color */
+    --text-black: #000000;
+    --text-primary-color: #192f59;
+    --text-secondary-color: #ffffff;
+    --text-third-color: #666666;
+
+}
+
+
+.containerForm {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerForm h2 {
+    margin-bottom: 20px;
+}
+
+.containerForm .form-group {
+    margin-bottom: 20px;
+}
+
+.containerForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.containerForm input[type="text"],
+.containerForm input[type="email"],
+.containerForm input[type="tel"],
+.containerForm textarea,
+.containerForm input[type="file"],
+.containerForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.containerForm textarea {
+    height: 100px;
+    resize: none;
+}
+
+.containerForm button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.containerForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .containerForm {
+        width: 90%;
+    }
+}
