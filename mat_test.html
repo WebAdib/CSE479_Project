@@ -9,29 +9,35 @@
         crossorigin="anonymous">
     <style>
         .pointer {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            border-radius: 80%;
             background-color: red;
             position: absolute;
             transform: translate(-50%, -50%);
-            display: none;
         }
-
         .label {
             position: absolute;
             transform: translate(-50%, -120%);
             white-space: nowrap;
-            color: white;
+            color: white; 
             font-weight: bold;
-            display: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2px 5px;
-            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8); 
+            padding: 8px 12px; 
+            border-radius: 8px;
+            border: 2px solid 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+            text-shadow: 1px 1px 2px black; 
+            font-size: 1.1em; 
         }
 
         #map-container {
             position: relative;
+            width: 100%; /* Responsive width */
+        }
+        #map-container img {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
         }
 
         .navbar {
@@ -92,10 +98,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(500, 500)">Entrance</a>
+                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(26, 50)">Entrance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(900, 250)">Library</a>
+                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(50, 20)">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(25, 70)">CSE Department Office</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="movePointer(18, 20)">AI LAB</a>
                     </li>
                 </ul>
                 <button class="animated-button" onclick="window.location.href='map2.html'">3D VIEW</button>
@@ -113,9 +125,14 @@
     </div>
 
     <script>
-        function movePointer(x, y) {
+        function movePointer(percX, percY) {
+            var img = document.querySelector('#map-container img');
             var pointer = document.getElementById('pointer');
             var label = document.getElementById('label');
+    
+            var x = percX * img.clientWidth / 100;
+            var y = percY * img.clientHeight / 100;
+    
             pointer.style.left = x + 'px';
             pointer.style.top = y + 'px';
             label.style.left = x + 'px';
