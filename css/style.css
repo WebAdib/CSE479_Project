@@ -565,8 +565,46 @@ footer .container .quicklinks ul li a:hover {
     background: var(--bg-primary-color);
     /* border: 1px solid rgb(0, 0,0,0.15); */
 }
-
 /* footer  end*/
+/* club section  start */
+.becomeMember {
+    background-color: white;
+    margin: 40px 0px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.becomeMember h2 {
+    color: var(--text-primary-color);
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.becomeMember p {
+    color: var(--text-third-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 0px 40px;
+}
+
+.becomeMember button {
+    background-color: #ffffff;
+    border: 2px solid #192f59;
+    color: var(--text-primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.becomeMember button:hover {
+    background-color: #192f59;
+    color: #ffffff;
+}
+/* club section  End */
 
 
 /* responsive for tab  */
