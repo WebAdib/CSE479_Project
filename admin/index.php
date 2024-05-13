@@ -45,7 +45,9 @@ include("templates/header.php");
                 <th style="width:15%;">Publication Date</th>
                 <th style="width:15%;">Job Title</th>
                 <th style="width:45%;">Job Description</th>
-                <th style="width:25%;">Action</th>
+                <th style="width:15%;">Link</th> <!-- New column for link -->
+                <th style="width:10%;">Action</th>
+
             </tr>
         </thead>
         <tbody>
@@ -60,6 +62,7 @@ include("templates/header.php");
                     <td><?php echo $data["date"] ?></td>
                     <td><?php echo $data["title"] ?></td>
                     <td><?php echo $data["summary"] ?></td>
+                    <td><?php echo $data["link"] ?></td> <!-- New column for link -->
                     <td>
                         <a class="btn btn-info" href="view.php?id=<?php echo $data["id"] ?>">View</a>
                         <a class="btn btn-warning" href="edit.php?id=<?php echo $data["id"] ?>">Edit</a>
@@ -69,6 +72,7 @@ include("templates/header.php");
             <?php
             }
             ?>
+
 
         </tbody>
     </table>

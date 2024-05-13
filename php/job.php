@@ -222,7 +222,7 @@
                         <h2> <?php echo $data["title"]; ?></h2>
                     </div>
                     <div class="col-sm-5">
-                        <?php echo $data["content"]; ?>
+                        <?php echo $data["summary"]; ?>
                     </div>
                     <div class="col-sm-2">
                         <a href="view.php?id=<?php echo $data['id']; ?>" class="btn btn-primary">READ MORE</a>

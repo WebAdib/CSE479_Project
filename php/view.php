@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<header class="menu_wrapper">
+    <header class="menu_wrapper">
         <!-- menu section -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -218,9 +218,12 @@
             ?>
                     <div class="post bg-light p-4 mt-5">
                         <h1><?php echo $data['title']; ?></h1>
-                        <p><?php echo $data['date']; ?> </p>
-                        <p><?php echo $data['content']; ?> </p>
+                        <p><?php echo $data['date']; ?></p>
+                        <p><?php echo $data['summary']; ?></p>
+                        <p><?php echo $data['content']; ?></p>
+                        <a href="<?php echo $data['link']; ?>" class="btn btn-primary">Apply Now</a>
                     </div>
+
             <?php
                 }
             } else {

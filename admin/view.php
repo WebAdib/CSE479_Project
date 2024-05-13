@@ -13,6 +13,7 @@ include("templates/header.php");
         ?>
         <h1><?php echo  $data['title']; ?></h1>
         <p><?php echo $data['date']; ?></p>
+        <p><?php echo $data['summary']; ?></p>
         <p><?php echo $data['content']; ?></p>
         <?php
         }
