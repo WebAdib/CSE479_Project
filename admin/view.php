@@ -6,7 +6,7 @@ include("templates/header.php");
     <?php
     $id = $_GET["id"];
     if ($id) {
-        include("../connect.php");
+        include("../php/connect.php");
         $sqlSelectPost = "SELECT * FROM posts WHERE id = $id";
         $result = mysqli_query($conn, $sqlSelectPost);
         while ($data = mysqli_fetch_array($result)) {

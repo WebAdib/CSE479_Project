@@ -21,7 +21,7 @@ if (!isset($_SESSION["user"])) {
                     <a href="create.php" class="text-light text-decoration-none"><strong>Add New Job</strong></a>
                 </div>
                 <div class="menu mt-5">
-                    <a href="../job.php" class="text-light text-decoration-none"><strong>View Website</strong></a>
+                    <a href="../php/job.php" class="text-light text-decoration-none"><strong>View Website</strong></a>
                 </div>
                 <div class="menu mt-5">
                     <a href="logout.php" class="btn btn-info">Logout</a>

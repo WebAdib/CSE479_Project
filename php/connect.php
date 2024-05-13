@@ -2,7 +2,7 @@
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPass = "";
-$dbName = "cms";
+$dbName = "contact_form_db";
 
 $conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
 if (!$conn) {
