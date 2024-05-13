@@ -1,14 +1,67 @@
-#image {
-  border: 1px solid black;
-  border-radius: 25px 50px 25px 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://www.desktopbackground.org/p/2010/06/17/34658_3d-view-hd-cool-wallpapers-3d_1920x1200_h.jpg);
+  padding-top: 70px; /* Add padding to body to avoid content hiding behind the fixed header */
+}
 
+.heading {
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Subtle shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish, readable font */
+  font-size: 36px; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Text shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  position: fixed; /* Fix position relative to the viewport */
+  width: 100%; /* Full viewport width */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.heading:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.5); /* Enhanced text shadow on hover */
 }
 
 .map-container {
   padding-top: 10px;
+  text-align: center;
+}
+
+#image {
+  border: 1px solid black;
+  border-radius: 25px 50px 25px 50px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#popupContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  height: 70%;
+  max-height: 70vh;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); 
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
 }
 
 #popupContent iframe {
@@ -16,10 +69,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90%;
-  max-height: 90%;
+  width: 98%; 
+  height: 88%; 
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px; 
 }
-
 #closeButton {
   position: absolute;
   top: 10px;
@@ -30,16 +84,8 @@
   padding: 5px 10px;
 }
 
-#popupContent {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 70%;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 20px;
-  z-index: 9999;
-  display: none;
+@media screen and (max-width: 600px) {
+  #popupContent {
+    width: 90%;
+  }
 }
