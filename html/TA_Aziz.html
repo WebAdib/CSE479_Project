@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE479 Project</title>
+    <title>TA View</title>
 
     <!-- bootstrap cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,18 +16,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/faculty.css">
 
 </head>
 
 <body>
-
     <header class="menu_wrapper">
         <!-- menu section -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Icon -->
-                <a href="index.html"><img class="logoImage" src="img/logo02.png" alt=""></a>
+                <a href="../index.html"><img class="logoImage" src="../img/logo02.png" alt=""></a>
                 <!-- navigation toggle button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
@@ -67,7 +67,6 @@
                                                 <button class="btnSort" onclick="sortList()">Sort List</button>
                                                 <li><a class="dropdown-item" href="#"></a></li>
                                                 <li><a class="dropdown-item" href="#">Amit Kumar Das</a></li>
-                                                <li><a class="dropdown-item" href="html/imranSir.html">Md Al-Imran</a></li>
                                                 <li><a class="dropdown-item" href="#">M. Saddam Hossain Khan</a></li>
                                                 <li><a class="dropdown-item" href="#">M. Ruhul Amin (MRA) </a></li>
                                                 <li><a class="dropdown-item" href="#">Dr. Mohammad Rifat Ahmmad
@@ -79,7 +78,7 @@
                                                 <li><a class="dropdown-item" href="#">Dr. Md. Nawab Yousuf Ali</a></li>
                                                 <li><a class="dropdown-item" href="#">Dr. Ahmed Wasif Reza</a></li>
                                                 <li><a class="dropdown-item" href="#">Dr. Taskeed Jabid</a></li>
-                                                <li><a class="dropdown-item" href="html/maheenIslam.html">Dr. Maheen
+                                                <li><a class="dropdown-item" href="../html/maheenIslam.html">Dr. Maheen
                                                         Islam</a></li>
                                                 <li><a class="dropdown-item" href="#">Dr. Mohammad Rezwanul Huq</a></li>
                                                 <li><a class="dropdown-item" href="#">Dr. Anisur Rahman</a></li>
@@ -137,7 +136,7 @@
                                         <li><a class="dropdown-item" href="#">Second Floor</a></li>
                                         <li><a class="dropdown-item" href="#">Third Floor</a></li>
                                         <li><a class="dropdown-item" href="#">Forth Floor</a></li>
-                                        <li><a class="dropdown-item" href="html/mat_test.html">Fifth Floor</a></li>
+                                        <li><a class="dropdown-item" href="../html/map2.html">Fifth Floor</a></li>
                                     </ul>
                                 </li>
 
@@ -160,7 +159,7 @@
                                             <div class="col-lg-3 col-sm-6 px-4 px-xl-5 px-4">
                                                 <h5>Science & Tecnology</h5>
                                                 <div class="list-group">
-                                                    <a class="list-group-item" href="html/ewucopc.html">Programming
+                                                    <a class="list-group-item" href="../html/ewucopc.html">Programming
                                                         Club</a>
                                                     <a class="list-group-item" href="#">Electronics Club</a>
                                                     <a class="list-group-item" href="#">Cyber Security Club</a>
@@ -207,10 +206,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="admin/login.php">Users</a>
+                            <a class="nav-link" href="../admin/login.php">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/contactUs.html">Contact Us</a>
+                            <a class="nav-link" href="../html/contactUs.html">Contact Us</a>
                         </li>
                     </ul>
                     <form class="d-flex ms-auto" role="search">
@@ -225,220 +224,78 @@
         </nav>
     </header>
 
-    <!-- carousel section  -->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+    <!-- hero section start -->
+    <div class="facultybackground-overlay">
+        <div class="facultycontent">
+            <h1>Azizur Rahman</h1>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/slider01.png" class="d-block w-100" alt="slider01">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>East West University</h5>
-                    <p>Empowering Futures, East West University cultivates excellence in education and innovation.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/slider02.png" class="d-block w-100" alt="slider02">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Our Library</h5>
-                    <p>"The university library, a beacon of knowledge, serves as a sanctuary for students, nurturing
-                        their academic growth and intellectual curiosity."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/slider06.jpg" class="d-block w-100" alt="slider03">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Orientation Program</h5>
-                    <p>At East West University, we bridge knowledge with ambition, shaping leaders of tomorrow</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-            <i class="fa-solid fa-circle-arrow-left"></i>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-            <i class="fa-solid fa-circle-arrow-right"></i>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-
-    <!-- section 1 start  -->
-    <div class="course">
-        <h1>Program We Offer</h1>
-        <p>Explore our diverse array of 29+ programs designed to cater to your academic and professional interests</p>
-        <div class="row">
-            <div class="course-col">
-                <h3>MBA / EMBA Programs</h3>
-                <p>Apply for Admission MBA/EMBA Programs: Spring 2024. MBA Application Deadline:January 12, 2024. EMBA
-                    Application Deadline: January 13, 2024
-                </p>
+    <!-- hero section end  -->
+    <!-- faculty section 1 -->
+    <div class="about-section">
+        <!-- about left section  -->
+        <div class="about-left">
+            <img src="../img/TA_Aziz.jpeg" alt="" width="350px">
+        </div>
+        <!-- about rignt section  -->
+        <div class="about-right">
+            <h1>Azizur Rahman</h1>
+            <p>Undergraduate Teaching Assistant, Department of Computer Science & Engineering</p>
+            <div class="addresses">
+                <ul>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </span>
+                        <p>Semester</p>
+                        <span class="separater">:</span>
+                        <p>11th semester (2021-1-60-085) </p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <p>Address</p>
+                        <span class="separater">:</span>
+                        <p>A/2, Jahurul Islam Avenue
+                            Jahurul Islam City, Aftabnagar
+                            Dhaka-1212, Bangladesh</p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <p>Phone</p>
+                        <span class="separater">:</span>
+                        <p>+8801814103967</p>
+                    </li>
+                </ul>
             </div>
-            <div class="course-col">
-                <h3>Undergraduate</h3>
-                <p>Generous Scholarships from 50%-100% is available during admission.</p>
-            </div>
-            <div class="course-col">
-                <h3>Graduate</h3>
-                <p>Generous Scholarships and Financial Assistance: 11 Crores</p>
+            <div class="expertise">
+                <h3>Social Links</h3>
+                <ul class="sociallinks">
+                    <li><a href="mailto:2021-1-60-085@std.ewubd.edu"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://fse.ewubd.edu/computer-science-engineering/faculty-view/maheen"><i
+                                class="fa-solid fa-angles-right"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <!-- section 1 end  -->
-    <!-- Section 2 section start  -->
-    <div class="section2">
-        <div class="services">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <h2>Degree Program</h2>
-                <p>Join world's brightest minds</p>
-                <a href="https://ewubd.edu/degree-programs" class="btn-se2-b1">Read More</a>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-book-bookmark"></i>
-                </div>
-                <h2>Student's Welfare</h2>
-                <p>Depertment of student welfare</p>
-                <a href="" class="btn-se2-b1">Read More</a>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-trophy"></i>
-                </div>
-                <h2>Scholership</h2>
-                <p>Scholership & financial Aid</p>
-                <a href="https://ewubd.edu/scholarships-financial-aid" class="btn-se2-b1">Read More</a>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                </div>
-                <h2>Alumni</h2>
-                <p>Our Alumni is our Strength</p>
-                <a href="" class="btn-se2-b1">Read More</a>
-            </div>
-
-        </div>
-
+    <!-- office hour section start  -->
+    <div class="office-hour">
+        <h2>My Office Hour</h2>
+        <img src="../img/TA_Aziz_OfficeHour.jpeg" alt="Office Picture">
     </div>
+    <!-- office hour section end  -->
 
-    <!-- Section 2 end  -->
-    <!-- section 3 start  -->
-    <div class="campus">
-        <h1>Our Beautiful Campus</h1>
-        <p>Discover our vibrant campus, a hub of innovation and collaboration, where students thrive in a supportive
-            and inclusive environment. From state-of-the-art facilities to lush green spaces, our campus offers the
-            perfect setting for academic excellence and personal growth.</p>
-        <div class="row">
-            <div class="campus-col">
-                <img src="img/campus3.jpg" alt="">
-                <div class="img-layer">
-                    <h3>Main Campus</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="img/campus4.jpg" alt="">
-                <div class="img-layer">
-                    <h3>FUB</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="img/campus1.jpg" alt="">
-                <div class="img-layer">
-                    <h3>AB3</h3>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- section 3 end  -->
-    <!-- section 4 start  -->
-    <div class="section4">
-        <div class="services">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <h2 class="count" data-target="11000">0</h2>
-                <p>Student Enrolled</p>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <h2 class="countOthers" data-target="105">0</h2>
-                <p>PHD Professors</p>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-book"></i>
-                </div>
-                <h2 class="countOthers" data-target="29">0</h2>
-                <p>Program Offered</p>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-award"></i>
-                </div>
-                <h2 class="countOthers" data-target="11">0</h2>
-                <p>National Awards</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- section 4 end  -->
-    <!-- section 5 start  -->
-    <div class="facilities">
-        <h1>Our Facilities</h1>
-        <p>Experience our top-notch facilities designed to enrich every aspect of student life. With amenities like a
-            spacious badminton court, multipurpose hall, serene library, and more, we ensure a well-rounded and
-            fulfilling academic journey for all.</p>
-        <div class="row">
-            <div class="facilities-col">
-                <img src="img/fa-library.jpg" alt="">
-                <h3>A beautiful Library</h3>
-                <p>Step into our captivating library, a sanctuary of knowledge and exploration, where boundless
-                    resources await to inspire and enrich your academic pursuits.</p>
-            </div>
-            <div class="facilities-col">
-                <img src="img/fa-auditorium.jpg"" alt="">
-                    <h3>A Huge Auditorium</h3>
-                    <p>Experience the grandeur of our auditorium, a versatile space where ideas come to life,
-                    performances captivate, and events unfold in an atmosphere of elegance and inspiration.</p>
-            </div>
-            <div class=" facilities-col">
-                <img src="img/fa-badminton.jpg"" alt="">
-                    <h3>A Badminton Court</h3>
-                    <p>Dive into spirited matches or hone your skills in our modern badminton court, fostering a
-                    dynamic blend of athleticism and camaraderie.</p>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- section 5 end  -->
-
+    <!-- ta section end -->
     <!-- footer section start  -->
     <footer>
         <div class=" container">
                 <div class="aboutus">
-                    <a href="index.html"><img class="footerLogoImage" src="img/logo03.png" alt=""></a>
+                    <a href="../index.html"><img class="footerLogoImage" src="../img/logo03.png" alt=""></a>
                     <p> <i class="fa-solid fa-location-dot"></i> A/2, Jahurul Islam Avenue
                         Jahurul Islam City, Aftabnagar
                         Dhaka-1212, Bangladesh</p>
@@ -450,7 +307,7 @@
                         <a href="mailto:info@ewubd.edu">info@ewubd.edu</a>
                     </p>
                     <ul class="sociallinks">
-                        <li><a href="html/contactUs.html"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="../html/contactUs.html"><i class="fa-regular fa-envelope"></i></a></li>
                         <li><a href="https://www.facebook.com/myewu/"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="https://twitter.com/myewubd"><i class="fa-brands fa-x-twitter"></i></a></li>
                         <li><a href="https://www.youtube.com/EastWestUniversity96"><i
@@ -464,7 +321,7 @@
                         <li><a href="#">Office Hour of TA</a></li>
                         <li><a href="#">Upcomming Competitions</a></li>
                         <li><a href="#">Upcomming Events</a></li>
-                        <li><a href="php/job.php">Vacancies</a></li>
+                        <li><a href="../php/job.php">Vacancies</a></li>
                     </ul>
                 </div>
                 <div class="quicklinks">
@@ -473,7 +330,7 @@
                         <li><a href="#">Find your room</a></li>
                         <li><a href="#">Achivments</a></li>
                         <li><a href="#">Capstone Projects</a></li>
-                        <li><a href="php/job.php">Vacancies</a></li>
+                        <li><a href="../php/job.php">Vacancies</a></li>
                     </ul>
                 </div>
                 <div class="map">
@@ -499,8 +356,8 @@
                 crossorigin="anonymous"></script>
 
             <!-- other js file link  -->
-            <script src="js/sort.js"></script>
-            <script src="js/counter.js"></script>
+            <script src="../js/sort.js"></script>
+            <script src="../js/counter.js"></script>
 </body>
 
 </html>
